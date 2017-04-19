@@ -1,0 +1,12 @@
+{{yield}}
+
+{{input value=wish}}
+<button {{action "addWish"}}>Add Wish</button>
+
+<ul>
+	{{#each wishes as |wish|}}
+		<li>{{wish}}</li>
+	{{/each}}
+</ul>
+
+<button {{action "saveWishes"}}>Save Wishes</button>
